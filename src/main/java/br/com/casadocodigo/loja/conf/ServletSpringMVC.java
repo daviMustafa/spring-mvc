@@ -44,13 +44,13 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 		registration.setMultipartConfig(new MultipartConfigElement(""));
 	}
 	
-//	@Override
-//	public void onStartup(ServletContext servletContext) throws ServletException {
-//		super.onStartup(servletContext);
-//		//Spring escutando os contextos da aplicação
-//		servletContext.addListener(RequestContextListener.class);
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		super.onStartup(servletContext);
+		//Spring escutando os contextos da aplicação
+		servletContext.addListener(RequestContextListener.class);
 //		servletContext.setInitParameter("spring.profiles.active", "dev");
-//	}
+	}
 	
 	
 }
