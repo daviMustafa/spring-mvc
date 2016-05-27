@@ -44,7 +44,7 @@ public class HomeController {
 		usuario.setNome("admin");
 		usuario.setEmail("admin@casadocodigo.com.br");
 		usuario.setSenha("$2a$10$cYLM.qoXpeAzcZhJ3oXRLu9Slkb61LHyWW5qJ4QKvHEMhaxZ5qCPi");
-		usuario.setRoles(Arrays.asList(new Role("ADMIN")));
+		usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
 		
 		usuarioDao.gravar(usuario);
 		return "Url Mágica Executada";
